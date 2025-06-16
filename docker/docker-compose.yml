@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+  smartoptimizer:
+    build: 
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: smartoptimizer
+    environment:
+      - SMARTOPT_MODE=safe
+      - SMARTOPT_CONFIDENCE=70
+      - SMARTOPT_BACKUP=/app/backups
+    volumes:
+      # Montage du répertoire utilisateur à analyser
+      - ${HOME}:/home/optimizer/data:ro
+      # Répertoire de sauvegarde
+      - ./backups:/home/optimizer/backups
+      # Répertoire de rapports
+      - ./reports:/home/optimizer/reports
+    networks:
+      - smartopt-network
+    # Empêcher le container de s'arrêter immédiatement
+    tty: true
+    stdin_open: true
+
+  # Service pour interface web (futur)
+  smartopt-web:
+    build: 
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: smartoptimizer-web
+    command: ["shell"]
+    ports:
+      - "8080:8080"
+    environment:
+      - SMARTOPT_MODE=safe
+      - SMARTOPT_WEB=true
+    volumes:
+      - ${HOME}:/home/optimizer/data:ro
+      - ./backups:/home/optimizer/backups
+      - ./reports:/home/optimizer/reports
+    networks:
+      - smartopt-network
+    profiles:
+      - web
+
+networks:
+  smartopt-network:
+    driver: bridge
+
+volumes:
+  smartopt-backups:
+    driver: local
+  smartopt-reports:
+    driver: local

@@ -1,0 +1,9 @@
+# SmartOptimizer Python Dependencies
+# Core dependencies
+Pillow>=8.0.0
+moviepy>=1.0.3
+mutagen>=1.45.0
+
+# Optional dependencies for advanced features
+requests>=2.25.0
+psutil>=5.8.0
