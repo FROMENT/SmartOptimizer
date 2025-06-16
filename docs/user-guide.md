@@ -198,9 +198,9 @@ Chaque fichier reçoit un score basé sur:
 
 ### Scores de confiance
 
-- **90%+**: Actions automatiques sûres
-- **70-89%**: Validation recommandée
-- **<70%**: Vérification manuelle obligatoire
+- 🟢 **90%+**: Actions automatiques sûres
+- 🟡 **70-89%**: Validation recommandée
+- 🔴 **<70%**: Vérification manuelle obligatoire
 
 ## 🔧 Personnalisation avancée
 

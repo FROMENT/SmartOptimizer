@@ -40,9 +40,9 @@ Analyse, organise et optimise votre répertoire home avec intelligence artificie
 - **Contextuel** : Classification par type et usage
 
 ### **Scores de confiance**
-- 🔴 **90%+** : Optimisations sûres
+- 🟢 **90%+** : Optimisations sûres
 - 🟡 **70-89%** : Validation recommandée  
-- 🟢 **<70%** : Vérification manuelle requise
+- 🔴 **<70%** : Vérification manuelle requise
 
 ## 🛡️ Sécurité maximale
 

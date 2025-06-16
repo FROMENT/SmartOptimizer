@@ -112,7 +112,7 @@ SmartOptimizer/
 ### Sécurité cloud avancée
 - **Détection multi-cloud**: Google Drive, iCloud, Dropbox, OneDrive
 - **Vérifications temps réel**: Fichiers temporaires, locks, processus actifs
-- **Scores de confiance**: Actions automatiques (90%+), validation (70-89%), manuel (<70%)
+- **Scores de confiance**: 🟢 Actions automatiques (90%+), 🟡 validation (70-89%), 🔴 manuel (<70%)
 
 ## 📊 Statistiques du projet
 
