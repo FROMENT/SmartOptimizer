@@ -1,0 +1,112 @@
+{
+  "SmartOptimizer Class": {
+    "prefix": "soclass",
+    "body": [
+      "#!/usr/bin/env python3",
+      "\"\"\"",
+      "${1:Description du module}",
+      "",
+      "Auteur: Pascal Froment <pascal.froment@gmail.com>",
+      "GitHub: https://github.com/FROMENT/SmartOptimizer", 
+      "\"\"\"",
+      "",
+      "import os",
+      "import sys",
+      "from pathlib import Path",
+      "",
+      "class ${2:ClassName}:",
+      "    def __init__(self):",
+      "        \"\"\"${3:Initialisation de la classe}\"\"\"",
+      "        self.simulation_mode = True",
+      "        ${4:# Configuration initiale}",
+      "        ",
+      "    def ${5:method_name}(self, ${6:param}):",
+      "        \"\"\"",
+      "        ${7:Description de la méthode}",
+      "        ",
+      "        Args:",
+      "            ${6:param}: ${8:Description du paramètre}",
+      "            ",
+      "        Returns:",
+      "            ${9:Description du retour}",
+      "        \"\"\"",
+      "        ${10:pass}",
+      "",
+      "if __name__ == \"__main__\":",
+      "    ${11:# Code principal}",
+      "    pass"
+    ],
+    "description": "Template de classe SmartOptimizer avec docstrings"
+  },
+  
+  "SmartOptimizer Function": {
+    "prefix": "sofunc",
+    "body": [
+      "def ${1:function_name}(${2:params}):",
+      "    \"\"\"",
+      "    ${3:Description de la fonction}",
+      "    ",
+      "    Args:",
+      "        ${4:param}: ${5:Description du paramètre}",
+      "        ",
+      "    Returns:",
+      "        ${6:Description du retour}",
+      "    \"\"\"",
+      "    ${7:pass}"
+    ],
+    "description": "Function avec docstring SmartOptimizer"
+  },
+  
+  "Platform Detection": {
+    "prefix": "soplatform",
+    "body": [
+      "import platform",
+      "",
+      "# Détection de la plateforme",
+      "system = platform.system().lower()",
+      "is_windows = system == 'windows'",
+      "is_macos = system == 'darwin'", 
+      "is_linux = system == 'linux'",
+      "",
+      "if is_windows:",
+      "    ${1:# Code spécifique Windows}",
+      "elif is_macos:",
+      "    ${2:# Code spécifique macOS}",
+      "elif is_linux:",
+      "    ${3:# Code spécifique Linux}",
+      "else:",
+      "    ${4:# Plateforme non supportée}"
+    ],
+    "description": "Détection multi-platform SmartOptimizer"
+  },
+  
+  "Error Handling": {
+    "prefix": "soerror",
+    "body": [
+      "try:",
+      "    ${1:# Code à exécuter}",
+      "except ${2:Exception} as e:",
+      "    print(f\"❌ Erreur ${3:opération}: {e}\")",
+      "    ${4:# Gestion d'erreur}",
+      "    return False",
+      "except Exception as e:",
+      "    print(f\"❌ Erreur inattendue: {e}\")",
+      "    return False"
+    ],
+    "description": "Gestion d'erreur SmartOptimizer"
+  },
+  
+  "Simulation Mode Check": {
+    "prefix": "sosim",
+    "body": [
+      "if self.simulation_mode:",
+      "    print(f\"🟢 SIMULATION: ${1:action}\")",
+      "    ${2:# Action en mode simulation}",
+      "else:",
+      "    print(f\"🔴 RÉEL: ${1:action}\")",
+      "    ${3:# Action réelle}",
+      "    ${4:# Code d'exécution réelle}"
+    ],
+    "description": "Vérification mode simulation SmartOptimizer"
+  }
+}

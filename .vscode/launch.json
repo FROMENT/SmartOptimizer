@@ -1,0 +1,82 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "SmartOptimizer: Interface Principale",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/smart.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}"
+      }
+    },
+    {
+      "name": "SmartOptimizer: Vérification Projet",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/verify_project.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}"
+      }
+    },
+    {
+      "name": "SmartOptimizer: Installation",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/install_universal.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}"
+      }
+    },
+    {
+      "name": "SmartOptimizer: Dédoublonnage Rapide",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/dedoublons_rapide.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}"
+      }
+    },
+    {
+      "name": "SmartOptimizer: Revue Code",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/code_review.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}"
+      }
+    },
+    {
+      "name": "Debug: Module Analyzer",
+      "type": "python",
+      "request": "launch",
+      "module": "src.analyzers.universal_cloud_detector",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}"
+      }
+    },
+    {
+      "name": "Debug: Module Platform",
+      "type": "python",
+      "request": "launch",
+      "module": "src.utils.platform_detector",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}"
+      }
+    }
+  ]
+}

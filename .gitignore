@@ -4,6 +4,11 @@
 # Configuration personnelle
 smartoptimizer.conf
 
+# VS Code - Paramètres utilisateur (garder les configurations workspace)
+.vscode/settings.json.user
+.vscode/launch.json.user
+.vscode/*.log
+
 # Backups et fichiers temporaires
 *_backup/
 *_backups/

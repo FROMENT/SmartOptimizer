@@ -1,0 +1,119 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "SmartOptimizer: Lancer Interface",
+      "type": "shell",
+      "command": "python3",
+      "args": ["smart.py"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "SmartOptimizer: Vérifier Projet",
+      "type": "shell",
+      "command": "python3",
+      "args": ["verify_project.py"],
+      "group": "test",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "SmartOptimizer: Installation",
+      "type": "shell",
+      "command": "python3",
+      "args": ["install_universal.py"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "SmartOptimizer: Tests Rapides",
+      "type": "shell",
+      "command": "./quick_test.sh",
+      "group": "test",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "SmartOptimizer: Revue Code",
+      "type": "shell",
+      "command": "python3",
+      "args": ["code_review.py"],
+      "group": "test",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Git: Status et Log",
+      "type": "shell",
+      "command": "git",
+      "args": ["status", "&&", "git", "log", "--oneline", "-5"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Python: Format All Files",
+      "type": "shell",
+      "command": "black",
+      "args": [".", "--line-length=88"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Python: Lint All Files",
+      "type": "shell",
+      "command": "flake8",
+      "args": [".", "--max-line-length=88", "--extend-ignore=E203,W503"],
+      "group": "test",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "new"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
