@@ -35,6 +35,18 @@ SmartOptimizer/
 - **Vérifier projet :** `python3 verify_project.py`
 - **Revue qualité :** `python3 code_review.py`
 
+## 📂 Reprise de Projet
+```bash
+# Aller dans le dossier projet
+cd SmartOptimizer
+
+# Vérifier l'état
+git status
+
+# Relancer Claude Code  
+claude
+```
+
 ## 🎯 Améliorations Prioritaires (v1.3)
 
 ### 📝 Documentation Code (Score +15)
@@ -98,4 +110,4 @@ Le projet est prêt pour le premier push sur GitHub avec tous les fichiers essen
 
 ---
 
-*Dernière mise à jour : 16/06/2025 - v1.2.0 déployé + Check final effectué*
+*Dernière mise à jour : 16/06/2025 - README complet + Chemins relatifs + v1.2.0 déployé*
