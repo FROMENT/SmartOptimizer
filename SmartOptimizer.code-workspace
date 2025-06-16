@@ -1,0 +1,347 @@
+{
+  "folders": [
+    {
+      "name": "SmartOptimizer",
+      "path": "."
+    },
+    {
+      "name": "📁 Source Code",
+      "path": "./src"
+    },
+    {
+      "name": "📚 Documentation",
+      "path": "./docs"
+    },
+    {
+      "name": "🧪 Tests",
+      "path": "./tests"
+    },
+    {
+      "name": "📦 Scripts",
+      "path": "./scripts"
+    },
+    {
+      "name": "🐳 Docker",
+      "path": "./docker"
+    }
+  ],
+  "settings": {
+    // Python Configuration
+    "python.defaultInterpreter": "python3",
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+      "--line-length=88"
+    ],
+    "python.sortImports.args": [
+      "--profile",
+      "black"
+    ],
+    // Auto-formatting
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    },
+    // File associations spécifiques SmartOptimizer
+    "files.associations": {
+      "*.py": "python",
+      "*.md": "markdown",
+      "*.sh": "shellscript",
+      "CLAUDE.md": "markdown",
+      "README.md": "markdown",
+      "COMMENT_REPRENDRE.md": "markdown",
+      "FINAL_IMPROVEMENTS_CHECK.md": "markdown",
+      "QUALITY_REPORT.md": "markdown",
+      "smart.py": "python",
+      "install_universal.py": "python",
+      "verify_project.py": "python",
+      "code_review.py": "python"
+    },
+    // Terminal configuration
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.cwd": "${workspaceFolder}",
+    // Git configuration
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "git.defaultCloneDirectory": "../",
+    // Explorateur de fichiers optimisé
+    "explorer.sortOrder": "type",
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.patterns": {
+      "smart.py": "install_universal.py, verify_project.py, code_review.py, prepare_github.py",
+      "README.md": "README_*.md, COMMENT_REPRENDRE.md",
+      "CHANGELOG.md": "WHATS_NEW_*.md",
+      "*.py": "${capture}.pyc, ${capture}.pyo",
+      "requirements.txt": "requirements-*.txt, requirements/*.txt"
+    },
+    // Spell checker avec mots SmartOptimizer
+    "cSpell.words": [
+      "SmartOptimizer",
+      "OneDrive",
+      "macOS",
+      "Froment",
+      "dedoublonnage",
+      "optimisation",
+      "entreprise",
+      "multi",
+      "cross",
+      "platform",
+      "univers",
+      "universelle",
+      "GitHub",
+      "SharePoint",
+      "Business",
+      "Enterprise",
+      "iCloud",
+      "Dropbox",
+      "CLAUDE",
+      "docstrings",
+      "VSCODE"
+    ],
+    // Apparence et productivité
+    "workbench.tree.indent": 20,
+    "workbench.colorTheme": "Default Dark+",
+    "workbench.iconTheme": "vs-seti",
+    "editor.minimap.enabled": true,
+    "editor.wordWrap": "on",
+    "editor.rulers": [
+      88
+    ],
+    "editor.bracketPairColorization.enabled": true,
+    // Recherche optimisée
+    "search.exclude": {
+      "**/__pycache__": true,
+      "**/*.pyc": true,
+      "**/node_modules": true,
+      "**/.git": true,
+      "**/.*_backup": true
+    },
+    // Files exclusions
+    "files.exclude": {
+      "**/__pycache__": true,
+      "**/*.pyc": true,
+      "**/.DS_Store": true,
+      "**/.*_backup": true
+    },
+    // Markdown configuration
+    "markdown.preview.enhanced.enableExtendedTableSyntax": true,
+    "markdown.preview.enhanced.enableTypographer": true,
+    "markdownlint.config": {
+      "MD013": {
+        "line_length": 120
+      },
+      "MD033": false
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-python.python",
+      "ms-python.pylint",
+      "ms-python.flake8",
+      "ms-python.black-formatter",
+      "ms-python.isort",
+      "ms-toolsai.jupyter",
+      "yzhang.markdown-all-in-one",
+      "davidanson.vscode-markdownlint",
+      "streetsidesoftware.code-spell-checker",
+      "eamodio.gitlens",
+      "ms-vscode.vscode-json",
+      "redhat.vscode-yaml",
+      "formulahendry.code-runner",
+      "ms-vscode.test-adapter-converter",
+      "littlefoxteam.vscode-python-test-adapter",
+      "ms-vscode.vscode-git-graph",
+      "github.vscode-pull-request-github"
+    ]
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "🚀 SmartOptimizer: Lancer Interface",
+        "type": "shell",
+        "command": "python3",
+        "args": [
+          "smart.py"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "presentation": {
+          "echo": true,
+          "reveal": "always",
+          "focus": false,
+          "panel": "new"
+        },
+        "problemMatcher": []
+      },
+      {
+        "label": "✅ SmartOptimizer: Vérifier Projet",
+        "type": "shell",
+        "command": "python3",
+        "args": [
+          "verify_project.py"
+        ],
+        "group": "test",
+        "presentation": {
+          "echo": true,
+          "reveal": "always",
+          "focus": false,
+          "panel": "new"
+        },
+        "problemMatcher": []
+      },
+      {
+        "label": "⚙️ SmartOptimizer: Installation Complète",
+        "type": "shell",
+        "command": "python3",
+        "args": [
+          "install_universal.py"
+        ],
+        "group": "build",
+        "presentation": {
+          "echo": true,
+          "reveal": "always",
+          "focus": true,
+          "panel": "new"
+        },
+        "problemMatcher": []
+      },
+      {
+        "label": "🧪 SmartOptimizer: Tests Rapides",
+        "type": "shell",
+        "command": "./quick_test.sh",
+        "group": "test",
+        "presentation": {
+          "echo": true,
+          "reveal": "always",
+          "focus": false,
+          "panel": "new"
+        },
+        "problemMatcher": []
+      },
+      {
+        "label": "📊 SmartOptimizer: Revue Qualité",
+        "type": "shell",
+        "command": "python3",
+        "args": [
+          "code_review.py"
+        ],
+        "group": "test",
+        "presentation": {
+          "echo": true,
+          "reveal": "always",
+          "focus": false,
+          "panel": "new"
+        },
+        "problemMatcher": []
+      },
+      {
+        "label": "🔄 Git: Status Complet",
+        "type": "shell",
+        "command": "git",
+        "args": [
+          "status",
+          "&&",
+          "echo",
+          "---",
+          "&&",
+          "git",
+          "log",
+          "--oneline",
+          "-5"
+        ],
+        "group": "build",
+        "presentation": {
+          "echo": true,
+          "reveal": "always",
+          "focus": false,
+          "panel": "new"
+        },
+        "problemMatcher": []
+      },
+      {
+        "label": "🎨 Python: Formater Tout le Code",
+        "type": "shell",
+        "command": "black",
+        "args": [
+          ".",
+          "--line-length=88",
+          "--verbose"
+        ],
+        "group": "build",
+        "presentation": {
+          "echo": true,
+          "reveal": "always",
+          "focus": false,
+          "panel": "new"
+        },
+        "problemMatcher": []
+      }
+    ]
+  },
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "🚀 SmartOptimizer: Interface Principale",
+        "type": "python",
+        "request": "launch",
+        "program": "${workspaceFolder}/smart.py",
+        "console": "integratedTerminal",
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "PYTHONPATH": "${workspaceFolder}"
+        }
+      },
+      {
+        "name": "✅ SmartOptimizer: Vérification",
+        "type": "python",
+        "request": "launch",
+        "program": "${workspaceFolder}/verify_project.py",
+        "console": "integratedTerminal",
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "PYTHONPATH": "${workspaceFolder}"
+        }
+      },
+      {
+        "name": "⚙️ SmartOptimizer: Installation",
+        "type": "python",
+        "request": "launch",
+        "program": "${workspaceFolder}/install_universal.py",
+        "console": "integratedTerminal",
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "PYTHONPATH": "${workspaceFolder}"
+        }
+      },
+      {
+        "name": "🔧 SmartOptimizer: Dédoublonnage",
+        "type": "python",
+        "request": "launch",
+        "program": "${workspaceFolder}/dedoublons_rapide.py",
+        "console": "integratedTerminal",
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "PYTHONPATH": "${workspaceFolder}"
+        }
+      },
+      {
+        "name": "🔍 Debug: Module Cloud Detector",
+        "type": "python",
+        "request": "launch",
+        "module": "src.analyzers.universal_cloud_detector",
+        "console": "integratedTerminal",
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "PYTHONPATH": "${workspaceFolder}"
+        }
+      }
+    ]
+  }
+}

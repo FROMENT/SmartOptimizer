@@ -5,15 +5,18 @@
   "python.linting.pylintEnabled": true,
   "python.linting.flake8Enabled": true,
   "python.formatting.provider": "black",
-  "python.formatting.blackArgs": ["--line-length=88"],
-  "python.sortImports.args": ["--profile", "black"],
-  
+  "python.formatting.blackArgs": [
+    "--line-length=88"
+  ],
+  "python.sortImports.args": [
+    "--profile",
+    "black"
+  ],
   // Auto-formatting
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.organizeImports": true
+    "source.organizeImports": "explicit"
   },
-  
   // File associations
   "files.associations": {
     "*.py": "python",
@@ -22,25 +25,23 @@
     "CLAUDE.md": "markdown",
     "README.md": "markdown"
   },
-  
   // Terminal configuration
   "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.integrated.profiles.osx": {
     "zsh": {
       "path": "/bin/zsh",
-      "args": ["-l"]
+      "args": [
+        "-l"
+      ]
     }
   },
-  
   // Git configuration
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
-  
   // Markdown configuration
   "markdown.preview.enhanced.enableExtendedTableSyntax": true,
   "markdown.preview.enhanced.enableTypographer": true,
-  
   // Spell checker
   "cSpell.words": [
     "SmartOptimizer",
@@ -54,7 +55,6 @@
     "cross",
     "platform"
   ],
-  
   // File exclusions
   "files.exclude": {
     "**/__pycache__": true,
@@ -63,14 +63,12 @@
     "**/node_modules": true,
     "**/.DS_Store": true
   },
-  
   // Search exclusions
   "search.exclude": {
     "**/__pycache__": true,
     "**/*.pyc": true,
     "**/node_modules": true
   },
-  
   // Explorer configuration
   "explorer.sortOrder": "type",
   "explorer.confirmDelete": true,

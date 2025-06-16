@@ -1,0 +1,27 @@
+{
+  "folders": [
+    {
+      "name": "SmartOptimizer",
+      "path": "."
+    }
+  ],
+  "settings": {
+    // Configuration minimale universelle
+    "python.defaultInterpreter": "python3",
+    "python.linting.enabled": true,
+    "python.formatting.provider": "black",
+    "editor.formatOnSave": true,
+    "files.exclude": {
+      "**/__pycache__": true,
+      "**/*.pyc": true,
+      "**/.DS_Store": true
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-python.python",
+      "ms-python.black-formatter",
+      "eamodio.gitlens"
+    ]
+  }
+}
